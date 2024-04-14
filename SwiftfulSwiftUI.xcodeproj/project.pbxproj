@@ -32,6 +32,12 @@
 		68F017342BC4480300EA5EDA /* SpotifySongRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F017332BC4480300EA5EDA /* SpotifySongRowCell.swift */; };
 		68F017372BC45B9000EA5EDA /* SpotifyHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F017362BC45B9000EA5EDA /* SpotifyHomeViewModel.swift */; };
 		68F017392BC45F2A00EA5EDA /* SpotifyPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F017382BC45F2A00EA5EDA /* SpotifyPlaylistViewModel.swift */; };
+		68F0173E2BC5628200EA5EDA /* BumbleHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F0173D2BC5628200EA5EDA /* BumbleHomeView.swift */; };
+		68F017402BC5654600EA5EDA /* BumbleFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F0173F2BC5654600EA5EDA /* BumbleFilterView.swift */; };
+		68F017422BC6BFCB00EA5EDA /* BumbleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F017412BC6BFCB00EA5EDA /* BumbleCardView.swift */; };
+		68F017442BC6C1D700EA5EDA /* BumbleHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F017432BC6C1D700EA5EDA /* BumbleHeartView.swift */; };
+		68F017462BC6C5FC00EA5EDA /* BumbleInterestPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F017452BC6C5FC00EA5EDA /* BumbleInterestPillView.swift */; };
+		68F017482BC6C7AC00EA5EDA /* BumbleInterestPillGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F017472BC6C7AC00EA5EDA /* BumbleInterestPillGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +65,12 @@
 		68F017332BC4480300EA5EDA /* SpotifySongRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifySongRowCell.swift; sourceTree = "<group>"; };
 		68F017362BC45B9000EA5EDA /* SpotifyHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHomeViewModel.swift; sourceTree = "<group>"; };
 		68F017382BC45F2A00EA5EDA /* SpotifyPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlaylistViewModel.swift; sourceTree = "<group>"; };
+		68F0173D2BC5628200EA5EDA /* BumbleHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleHomeView.swift; sourceTree = "<group>"; };
+		68F0173F2BC5654600EA5EDA /* BumbleFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleFilterView.swift; sourceTree = "<group>"; };
+		68F017412BC6BFCB00EA5EDA /* BumbleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleCardView.swift; sourceTree = "<group>"; };
+		68F017432BC6C1D700EA5EDA /* BumbleHeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleHeartView.swift; sourceTree = "<group>"; };
+		68F017452BC6C5FC00EA5EDA /* BumbleInterestPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleInterestPillView.swift; sourceTree = "<group>"; };
+		68F017472BC6C7AC00EA5EDA /* BumbleInterestPillGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleInterestPillGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		68CD758E2BBAAB4E00CFC7D6 /* SwiftfulSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				68F0173A2BC561A000EA5EDA /* Bumble */,
 				68CD758F2BBAAB4E00CFC7D6 /* SwiftfulSwiftUIApp.swift */,
 				68CD75912BBAAB4E00CFC7D6 /* ContentView.swift */,
 				68F0171A2BC2A4CA00EA5EDA /* Spotify */,
@@ -185,6 +198,35 @@
 			path = VMs;
 			sourceTree = "<group>";
 		};
+		68F0173A2BC561A000EA5EDA /* Bumble */ = {
+			isa = PBXGroup;
+			children = (
+				68F0173C2BC5627400EA5EDA /* Core */,
+				68F0173B2BC5626F00EA5EDA /* Components */,
+			);
+			path = Bumble;
+			sourceTree = "<group>";
+		};
+		68F0173B2BC5626F00EA5EDA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				68F0173F2BC5654600EA5EDA /* BumbleFilterView.swift */,
+				68F017412BC6BFCB00EA5EDA /* BumbleCardView.swift */,
+				68F017452BC6C5FC00EA5EDA /* BumbleInterestPillView.swift */,
+				68F017472BC6C7AC00EA5EDA /* BumbleInterestPillGridView.swift */,
+				68F017432BC6C1D700EA5EDA /* BumbleHeartView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		68F0173C2BC5627400EA5EDA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				68F0173D2BC5628200EA5EDA /* BumbleHomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,10 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F017422BC6BFCB00EA5EDA /* BumbleCardView.swift in Sources */,
 				68CD75A32BBAAD1E00CFC7D6 /* ImageLoaderView.swift in Sources */,
+				68F0173E2BC5628200EA5EDA /* BumbleHomeView.swift in Sources */,
 				68F017232BC2A83B00EA5EDA /* Category.swift in Sources */,
+				68F017462BC6C5FC00EA5EDA /* BumbleInterestPillView.swift in Sources */,
 				68F017202BC2A6A200EA5EDA /* SpotifyCategoryCell.swift in Sources */,
 				68F017302BC2E76600EA5EDA /* SpotifyPlaylistHeaderCell.swift in Sources */,
+				68F017442BC6C1D700EA5EDA /* BumbleHeartView.swift in Sources */,
+				68F017402BC5654600EA5EDA /* BumbleFilterView.swift in Sources */,
 				68F0172E2BC2E73400EA5EDA /* SpotifyPlaylistView.swift in Sources */,
 				68F017322BC2EB2B00EA5EDA /* SpotifyPlaylistDescriptionCell.swift in Sources */,
 				68F017372BC45B9000EA5EDA /* SpotifyHomeViewModel.swift in Sources */,
@@ -278,6 +325,7 @@
 				68F0171E2BC2A4F700EA5EDA /* SpotifyHomeView.swift in Sources */,
 				68F0172C2BC2BCA500EA5EDA /* SpotifyImageTitleRowCell.swift in Sources */,
 				68CD75922BBAAB4E00CFC7D6 /* ContentView.swift in Sources */,
+				68F017482BC6C7AC00EA5EDA /* BumbleInterestPillGridView.swift in Sources */,
 				68F0172A2BC2BA9100EA5EDA /* ViewExtensions.swift in Sources */,
 				68CD75902BBAAB4E00CFC7D6 /* SwiftfulSwiftUIApp.swift in Sources */,
 				68CD75A52BBAADBC00CFC7D6 /* Constants.swift in Sources */,

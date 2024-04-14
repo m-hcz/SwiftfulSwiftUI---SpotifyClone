@@ -14,7 +14,7 @@ struct DatabaseHelper {
 		}
 		let (data, _) = try await URLSession.shared.data(from: url)
 		let products = try JSONDecoder().decode(ProductArray.self, from: data)
-		return products.products
+		return products.products.shuffled()
 	}
 
 	func getUsers() async throws -> [User] {
@@ -23,7 +23,7 @@ struct DatabaseHelper {
 		}
 		let (data, _) = try await URLSession.shared.data(from: url)
 		let users = try JSONDecoder().decode(UserArray.self, from: data)
-		return users.users
+		return users.users.shuffled()
 	}
 }
 

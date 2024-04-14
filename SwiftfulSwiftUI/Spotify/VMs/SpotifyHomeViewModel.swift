@@ -22,9 +22,9 @@ final class SpotifyHomeViewModel {
 	}
 
 	func getData() async {
-		do {
-			guard products.isEmpty else { return }
+		guard products.isEmpty else { return }
 
+		do {
 			self.currentUser = try await DatabaseHelper().getUsers().first
 			self.products = try await Array(DatabaseHelper().getProducts().prefix(8))
 

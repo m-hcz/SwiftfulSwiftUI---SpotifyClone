@@ -22,6 +22,27 @@ struct User: Codable, Identifiable {
 	let height: Int
 	let weight: Double
 
+	var work: String { "My work" }
+	var education: String { "Graduate Degree" }
+	var aboutMe: String { "A sentence about me." }
+
+	var basics: [UserInterest] { [UserInterest(iconName: "ruler", text: "\(height)"),
+								  UserInterest(iconName: "gradiationcap", text: education),
+								  UserInterest(iconName: "wineglass", text: "Socially"),
+								  UserInterest(iconName: "heart.fill", text: "text 1"),
+								  UserInterest(iconName: "heart.fill", text: "text 1"),
+								  UserInterest(iconName: "moon.stars.fill", text: "Virgo"),
+	]}
+
+	var interests: [UserInterest] { [UserInterest(emoji: "☢️", text: "Running"),
+								  UserInterest(emoji: "😀", text: "Gym"),
+								  UserInterest(emoji: "😀", text: "Music"),
+								  UserInterest(emoji: "😀", text: "Cooking")
+	]}
+	var images: [String] {
+		["https://picsum.photos/600/601", "https://picsum.photos/600/602", "https://picsum.photos/600/603"]
+	}
+
 	static var mock: User {
 		.init(
 			id: 123,
